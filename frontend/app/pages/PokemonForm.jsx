@@ -40,7 +40,7 @@ export default function PokemonForm() {
     setError(null)
 
     try {
-      const response = await fetch("https://poke-pal-backend.onrender.com", {
+      const response = await fetch("https://poke-pal-backend.onrender.com/get-pokemon", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
